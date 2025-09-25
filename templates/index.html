@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanwi J Renjith - Portfolio</title>
+
+    <!-- Link CSS via Flask static -->
+    <link href="{{ url_for('static', filename='css/templatemo-personal-style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Tanwi J Renjith</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <!-- Example shapes using images -->
+            <img src="{{ url_for('static', filename='images/shape-1.png') }}" class="shape shape-1" alt="shape">
+            <img src="{{ url_for('static', filename='images/shape-2.png') }}" class="shape shape-2" alt="shape">
+            <img src="{{ url_for('static', filename='images/shape-3.png') }}" class="shape shape-3" alt="shape">
+        </div>
+        <div class="hero-content">
+            <div class="hero-subtitle">Software Engineer</div>
+            <h1>Building Intelligent Systems to Solve Real-world Problems</h1>
+            <p class="subtitle">I develop intelligent applications and software solutions using Machine Learning, AI, and modern web technologies to make a meaningful impact.</p>
+            <a href="#portfolio" class="cta-button">Explore My Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <!-- Example about image -->
+                <div class="about-image slide-in-left">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                </div>
+                <div class="about-text slide-in-right">
+                    <h3>Passionate about AI and Intelligent Systems</h3>
+                    <p>I am a software engineer with hands-on experience in machine learning and AI applications...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="{{ url_for('static', filename='images/violence-detection.png') }}" alt="Violence Detection Project">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Real-Time Violence Detection</h4>
+                        <p>Developed a deep learning system to detect violent behavior...</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="{{ url_for('static', filename='images/alzheimer-assist.png') }}" alt="Alzheimer Assistant Project">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Cognitive Assistance for Alzheimer Patients (Upcoming)</h4>
+                        <p>Designing an AI-powered cognitive assistant...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content fade-in">
+                <h2 class="section-title">Contact Me</h2>
+                <ul class="contact-details">
+                    <li>
+                        <span class="contact-icon">📧</span>
+                        <strong>Email:</strong> <a href="mailto:tanwijrenjith@gmail.com">tanwijrenjith@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <strong>Phone:</strong> +91-9945990242
+                    </li>
+                    <li>
+                        <span class="contact-icon">💼</span>
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Personal Shape. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS via Flask static -->
+    <script src="{{ url_for('static', filename='js/templatemo-personal-javascripts.js') }}"></script>
+</body>
+</html>
